@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#card{
+    position: absolute;
+}
+#forecast{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#current{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#weatherCard{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    margin-left: 10vw;
+    margin-top: 20vh;
+    width: 40vw;
+    height : 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 0.2em white solid;
+    color : white;
+    border-radius: 2em;
+    opacity: 90%;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+#right h2{
+    margin-top: 1em;
+}
+
+.day{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Card {
+    display: flex;
+}
+
+#weatherDetails{
+    width: 30vw;
+    height: 40vh;
+    margin-left: 6vw;
+    margin-right: 10vw;
+    background-color: aliceblue;
+    margin-top: 20vh;
+    border: 0.2em white solid;
+    border-radius: 2em;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,55,166,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+#WeatherDetailsHeading{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    color: white;
+    width: 100%;
+}
+
+#WeatherDetailsHeading h3{
+    color: white;
+    font-size: 2em;
+    border-bottom: 0.1em white solid;
+}
+
+#WeatherDetailsHeading p{
+    color: white;
+    font-size: 1.5em;
+}

@@ -1,0 +1,58 @@
+#inputbar {
+    display: flex;
+    font-size: 1.8em;
+    position: relative; /* Needed to position the suggestionBox absolutely within inputbar */
+}
+
+#inputbar input {
+    width: 30vw;
+    border: 0.1em solid lightblue;
+    padding-left: 2em;
+    border-radius: 2em;
+    height: 5vh;
+}
+
+#searchButton {
+    width: 4vh;
+    margin-top: 0.75vh;
+    color: black;
+    font-weight: 600;
+    background-color: white;
+    margin-left: -2.5em;
+    font-size: 0.6em;
+    height: 4vh;
+    border: none;
+}
+
+#suggestionBox {
+    position: absolute; /* Position suggestions absolutely within inputbar */
+    top: 6vh; /* Position it just below the input field */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with some opacity */
+    width: 30vw;
+    max-height: 200px; /* Limit height if there are many suggestions */
+    overflow-y: auto; /* Make it scrollable if it exceeds the max height */
+    border-radius: 0.5em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a nice look */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+#suggestions {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+}
+
+.city button {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    text-align: left;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    font-size: 0.5em;
+}
+
+.city button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Optional hover effect */
+}
